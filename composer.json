@@ -1,5 +1,5 @@
 {
-    "name" : "researchgate/api-model",
+    "name" : "researchgate/api-base",
     "type" : "library",
     "description" : "",
     "keywords" : [],
@@ -10,7 +10,7 @@
     },
     "autoload" : {
         "psr-0" : {
-            "rg\\api\\model" : "src/"
+            "rg\\api\\base" : "src/"
         }
     }
 }

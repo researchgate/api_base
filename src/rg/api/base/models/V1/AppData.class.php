@@ -1,5 +1,5 @@
 <?php
-namespace rg\api\model\V1;
+namespace rg\api\base\models\V1;
 
 use JMS\SerializerBundle\Annotation as JMS;
 
