@@ -6,7 +6,7 @@ use JMS\SerializerBundle\Annotation as JMS;
 /**
  * @copyright ResearchGate GmbH
  */
-class ApiAppData {
+class AppData {
 
     /**
      * id of application
