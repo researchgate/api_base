@@ -6,7 +6,7 @@
     "authors" : [],
     "require" : {
         "php" : ">=5.3.2",
-        "jms/serializer-bundle" : "0.9.*"
+        "jms/serializer" : "0.12.*"
     },
     "autoload" : {
         "psr-0" : {
