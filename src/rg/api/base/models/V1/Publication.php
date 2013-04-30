@@ -1,6 +1,8 @@
 <?php
 namespace rg\api\base\models\V1;
 
+use JMS\SerializerBundle\Annotation as JMS;
+
 /**
  * @copyright ResearchGate GmbH
  */
