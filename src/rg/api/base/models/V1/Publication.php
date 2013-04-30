@@ -11,8 +11,8 @@ class Publication {
     /**
      * id of the publication
      *
-     * @var int
-     * @JMS\Type("int")
+     * @var integer
+     * @JMS\Type("integer")
      * @JMS\ReadOnly
      */
     private $publicationUid;
