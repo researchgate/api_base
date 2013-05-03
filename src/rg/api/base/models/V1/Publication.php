@@ -13,7 +13,6 @@ class Publication {
      *
      * @var integer
      * @JMS\Type("integer")
-     * @JMS\ReadOnly
      */
     private $publicationUid;
 
@@ -22,7 +21,6 @@ class Publication {
      *
      * @var string
      * @JMS\Type("string")
-     * @JMS\ReadOnly
      */
     private $title;
 
