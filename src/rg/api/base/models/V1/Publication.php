@@ -11,8 +11,8 @@ class Publication {
     /**
      * id of the publication
      *
-     * @var integer
-     * @JMS\Type("integer")
+     * @var string
+     * @JMS\Type("string")
      */
     private $publicationId;
 
@@ -55,14 +55,31 @@ class Publication {
     private $assets;
 
     /**
-     * @param int $publicationUid
+     * type of the publication
+     *
+     * one of 'article', 'book', 'inCollection', 'inProceedings',
+     * 'thesis', 'patent', 'dataset'
+     *
+     * @var string
+     * @JMS\Type("string")
+     */
+    private $publicationType;
+
+    /**
+     * @var \rg\api\base\models\V1\PublicationAuthor[]|array
+     * @JMS\Type("array<rg\api\base\models\V1\PublicationAuthor>")
+     */
+    private $authors;
+
+    /**
+     * @param string $publicationUid
      */
     public function setPublicationId($publicationUid) {
         $this->publicationId = $publicationUid;
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getPublicationId() {
         return $this->publicationId;
@@ -136,6 +153,34 @@ class Publication {
      */
     public function getAssets() {
         return $this->assets;
+    }
+
+    /**
+     * @param string $publicationType
+     */
+    public function setPublicationType($publicationType) {
+        $this->publicationType = $publicationType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPublicationType() {
+        return $this->publicationType;
+    }
+
+    /**
+     * @param array|\rg\api\base\models\V1\PublicationAuthor[] $authors
+     */
+    public function setAuthors($authors) {
+        $this->authors = $authors;
+    }
+
+    /**
+     * @return array|\rg\api\base\models\V1\PublicationAuthor[]
+     */
+    public function getAuthors() {
+        return $this->authors;
     }
 
 }
