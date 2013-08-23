@@ -72,6 +72,48 @@ class Publication {
     private $authors;
 
     /**
+     * @var \rg\api\base\models\V1\PublicationArticle|null
+     * @JMS\Type("rg\api\base\models\V1\PublicationArticle")
+     */
+    private $article;
+
+    /**
+     * @var \rg\api\base\models\V1\PublicationBook|null
+     * @JMS\Type("rg\api\base\models\V1\PublicationBook")
+     */
+    private $book;
+
+    /**
+     * @var \rg\api\base\models\V1\PublicationDataset|null
+     * @JMS\Type("rg\api\base\models\V1\PublicationDataset")
+     */
+    private $dataset;
+
+    /**
+     * @var \rg\api\base\models\V1\PublicationInCollection|null
+     * @JMS\Type("rg\api\base\models\V1\PublicationInCollection")
+     */
+    private $inCollection;
+
+    /**
+     * @var \rg\api\base\models\V1\PublicationInProceedings|null
+     * @JMS\Type("rg\api\base\models\V1\PublicationInProceedings")
+     */
+    private $inProceedings;
+
+    /**
+     * @var \rg\api\base\models\V1\PublicationPatent|null
+     * @JMS\Type("rg\api\base\models\V1\PublicationPatent")
+     */
+    private $patent;
+
+    /**
+     * @var \rg\api\base\models\V1\PublicationThesis|null
+     * @JMS\Type("rg\api\base\models\V1\PublicationThesis")
+     */
+    private $thesis;
+
+    /**
      * @param string $publicationUid
      */
     public function setPublicationId($publicationUid) {
@@ -182,5 +224,104 @@ class Publication {
     public function getAuthors() {
         return $this->authors;
     }
+
+    /**
+     * @param null|\rg\api\base\models\V1\PublicationArticle $article
+     */
+    public function setArticle($article) {
+        $this->article = $article;
+    }
+
+    /**
+     * @return null|\rg\api\base\models\V1\PublicationArticle
+     */
+    public function getArticle() {
+        return $this->article;
+    }
+
+    /**
+     * @param null|\rg\api\base\models\V1\PublicationBook $book
+     */
+    public function setBook($book) {
+        $this->book = $book;
+    }
+
+    /**
+     * @return null|\rg\api\base\models\V1\PublicationBook
+     */
+    public function getBook() {
+        return $this->book;
+    }
+
+    /**
+     * @param null|\rg\api\base\models\V1\PublicationDataset $dataset
+     */
+    public function setDataset($dataset) {
+        $this->dataset = $dataset;
+    }
+
+    /**
+     * @return null|\rg\api\base\models\V1\PublicationDataset
+     */
+    public function getDataset() {
+        return $this->dataset;
+    }
+
+    /**
+     * @param null|\rg\api\base\models\V1\PublicationInCollection $inCollection
+     */
+    public function setInCollection($inCollection) {
+        $this->inCollection = $inCollection;
+    }
+
+    /**
+     * @return null|\rg\api\base\models\V1\PublicationInCollection
+     */
+    public function getInCollection() {
+        return $this->inCollection;
+    }
+
+    /**
+     * @param null|\rg\api\base\models\V1\PublicationInProceedings $inProceedings
+     */
+    public function setInProceedings($inProceedings) {
+        $this->inProceedings = $inProceedings;
+    }
+
+    /**
+     * @return null|\rg\api\base\models\V1\PublicationInProceedings
+     */
+    public function getInProceedings() {
+        return $this->inProceedings;
+    }
+
+    /**
+     * @param null|\rg\api\base\models\V1\PublicationPatent $patent
+     */
+    public function setPatent($patent) {
+        $this->patent = $patent;
+    }
+
+    /**
+     * @return null|\rg\api\base\models\V1\PublicationPatent
+     */
+    public function getPatent() {
+        return $this->patent;
+    }
+
+    /**
+     * @param null|\rg\api\base\models\V1\PublicationThesis $thesis
+     */
+    public function setThesis($thesis) {
+        $this->thesis = $thesis;
+    }
+
+    /**
+     * @return null|\rg\api\base\models\V1\PublicationThesis
+     */
+    public function getThesis() {
+        return $this->thesis;
+    }
+
 
 }

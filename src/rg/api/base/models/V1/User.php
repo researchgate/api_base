@@ -23,7 +23,7 @@ class User {
     private $firstname;
 
     /**
-     * first name of the account
+     * middle name of the account
      *
      * @var string
      * @JMS\Type("string")
@@ -31,42 +31,12 @@ class User {
     private $middlename;
 
     /**
-     * first name of the account
+     * last name of the account
      *
      * @var string
      * @JMS\Type("string")
      */
     private $lastname;
-
-    /**
-     * first name of the account
-     *
-     * @var string
-     * @JMS\Type("string")
-     */
-    private $formername;
-
-    /**
-     * first name of the account
-     *
-     * @var string
-     * @JMS\Type("string")
-     */
-    private $degree;
-
-    /**
-     * @param string $degree
-     */
-    public function setDegree($degree) {
-        $this->degree = $degree;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDegree() {
-        return $this->degree;
-    }
 
     /**
      * @param string $firstname
@@ -80,20 +50,6 @@ class User {
      */
     public function getFirstname() {
         return $this->firstname;
-    }
-
-    /**
-     * @param string $formername
-     */
-    public function setFormername($formername) {
-        $this->formername = $formername;
-    }
-
-    /**
-     * @return string
-     */
-    public function getFormername() {
-        return $this->formername;
     }
 
     /**

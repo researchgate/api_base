@@ -24,6 +24,12 @@ class PublicationAsset {
      * @var string
      * @JMS\Type("string")
      */
+    private $type;
+
+    /**
+     * @var string
+     * @JMS\Type("string")
+     */
     private $url;
 
     /**
@@ -36,7 +42,33 @@ class PublicationAsset {
      * @var string
      * @JMS\Type("string")
      */
+    private $mimeType;
+
+    /**
+     * @var string
+     * @JMS\Type("string")
+     */
+    private $status;
+
+    /**
+     * @var string
+     * @JMS\Type("string")
+     */
     private $thumbnailUrl;
+
+    /**
+     * @param string $mimeType
+     */
+    public function setMimeType($mimeType) {
+        $this->mimeType = $mimeType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMimeType() {
+        return $this->mimeType;
+    }
 
     /**
      * @param string $name
@@ -81,6 +113,20 @@ class PublicationAsset {
     }
 
     /**
+     * @param string $status
+     */
+    public function setStatus($status) {
+        $this->status = $status;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus() {
+        return $this->status;
+    }
+
+    /**
      * @param string $thumbnailUrl
      */
     public function setThumbnailUrl($thumbnailUrl) {
@@ -92,6 +138,20 @@ class PublicationAsset {
      */
     public function getThumbnailUrl() {
         return $this->thumbnailUrl;
+    }
+
+    /**
+     * @param string $type
+     */
+    public function setType($type) {
+        $this->type = $type;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType() {
+        return $this->type;
     }
 
     /**
@@ -107,7 +167,6 @@ class PublicationAsset {
     public function getUrl() {
         return $this->url;
     }
-
 
 
 }

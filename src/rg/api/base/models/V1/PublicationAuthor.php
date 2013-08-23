@@ -9,10 +9,22 @@ use JMS\Serializer\Annotation as JMS;
 class PublicationAuthor {
 
     /**
+     * @var string|null
+     * @JMS\Type("string")
+     */
+    private $firstName;
+
+    /**
+     * @var string|null
+     * @JMS\Type("string")
+     */
+    private $lastName;
+
+    /**
      * @var string
      * @JMS\Type("string")
      */
-    private $authorFullname;
+    private $fullName;
 
     /**
      * @var string|null
@@ -21,17 +33,45 @@ class PublicationAuthor {
     private $userId;
 
     /**
-     * @param string $authorFullname
+     * @param string $firstName
      */
-    public function setAuthorFullname($authorFullname) {
-        $this->authorFullname = $authorFullname;
+    public function setFirstName($firstName) {
+        $this->firstName = $firstName;
     }
 
     /**
      * @return string
      */
-    public function getAuthorFullname() {
-        return $this->authorFullname;
+    public function getFirstName() {
+        return $this->firstName;
+    }
+
+    /**
+     * @param string $fullName
+     */
+    public function setFullName($fullName) {
+        $this->fullName = $fullName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFullName() {
+        return $this->fullName;
+    }
+
+    /**
+     * @param mixed $lastName
+     */
+    public function setLastName($lastName) {
+        $this->lastName = $lastName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLastName() {
+        return $this->lastName;
     }
 
     /**
