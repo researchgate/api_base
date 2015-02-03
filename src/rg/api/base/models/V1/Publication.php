@@ -114,6 +114,18 @@ class Publication {
     private $thesis;
 
     /**
+     * @var \rg\api\base\models\V1\PublicationTechnicalReport|null
+     * @JMS\Type("rg\api\base\models\V1\PublicationTechnicalReport")
+     */
+    private $technicalReport;
+
+    /**
+     * @var \rg\api\base\models\V1\PublicationArtifact|null
+     * @JMS\Type("rg\api\base\models\V1\PublicationArtifact")
+     */
+    private $artifact;
+
+    /**
      * @param string $publicationUid
      */
     public function setPublicationId($publicationUid) {
@@ -323,5 +335,31 @@ class Publication {
         return $this->thesis;
     }
 
+    /**
+     * @return null|\rg\api\base\models\V1\PublicationTechnicalReport
+     */
+    public function getTechnicalReport() {
+        return $this->technicalReport;
+    }
 
+    /**
+     * @param null|\rg\api\base\models\V1\PublicationTechnicalReport $technicalReport
+     */
+    public function setTechnicalReport($technicalReport) {
+        $this->technicalReport = $technicalReport;
+    }
+
+    /**
+     * @return null|\rg\api\base\models\V1\PublicationArtifact
+     */
+    public function getArtifact() {
+        return $this->artifact;
+    }
+
+    /**
+     * @param null|\rg\api\base\models\V1\PublicationArtifact $artifact
+     */
+    public function setArtifact($artifact) {
+        $this->artifact = $artifact;
+    }
 }
