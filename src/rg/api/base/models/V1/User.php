@@ -20,7 +20,7 @@ class User {
      * @var string
      * @JMS\Type("string")
      */
-    private $firstname;
+    private $firstName;
 
     /**
      * middle name of the account
@@ -28,7 +28,7 @@ class User {
      * @var string
      * @JMS\Type("string")
      */
-    private $middlename;
+    private $middleName;
 
     /**
      * last name of the account
@@ -36,7 +36,7 @@ class User {
      * @var string
      * @JMS\Type("string")
      */
-    private $lastname;
+    private $lastName;
 
     /**
      * @var string
@@ -45,45 +45,45 @@ class User {
     private $imageURL;
 
     /**
-     * @param string $firstname
+     * @param string $firstName
      */
-    public function setFirstname($firstname) {
-        $this->firstname = $firstname;
+    public function setFirstName($firstName) {
+        $this->firstName = $firstName;
     }
 
     /**
      * @return string
      */
-    public function getFirstname() {
-        return $this->firstname;
+    public function getFirstName() {
+        return $this->firstName;
     }
 
     /**
-     * @param string $lastname
+     * @param string $lastName
      */
-    public function setLastname($lastname) {
-        $this->lastname = $lastname;
-    }
-
-    /**
-     * @return string
-     */
-    public function getLastname() {
-        return $this->lastname;
-    }
-
-    /**
-     * @param string $middlename
-     */
-    public function setMiddlename($middlename) {
-        $this->middlename = $middlename;
+    public function setLastName($lastName) {
+        $this->lastName = $lastName;
     }
 
     /**
      * @return string
      */
-    public function getMiddlename() {
-        return $this->middlename;
+    public function getLastName() {
+        return $this->lastName;
+    }
+
+    /**
+     * @param string $middleName
+     */
+    public function setMiddlename($middleName) {
+        $this->middleName = $middleName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMiddleName() {
+        return $this->middleName;
     }
 
     /**
