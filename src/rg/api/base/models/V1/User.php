@@ -39,6 +39,12 @@ class User {
     private $lastname;
 
     /**
+     * @var string
+     * @JMS\Type("string")
+     */
+    private $imageURL;
+
+    /**
      * @param string $firstname
      */
     public function setFirstname($firstname) {
@@ -94,5 +100,17 @@ class User {
         return $this->userId;
     }
 
+    /**
+     * @return string
+     */
+    public function getImageURL() {
+        return $this->imageURL;
+    }
 
+    /**
+     * @param string $url
+     */
+    public function setImageURL($url) {
+        $this->imageURL = $url;
+    }
 }
