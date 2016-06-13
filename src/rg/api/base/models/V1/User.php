@@ -45,6 +45,12 @@ class User {
     private $profileImageUrl;
 
     /**
+     * @var string
+     * @JMS\Type("string")
+     */
+    private $professionalInstitution;
+
+    /**
      * @param string $userId
      */
     public function setUserId($userId) {
@@ -112,5 +118,19 @@ class User {
      */
     public function getProfileImageUrl() {
         return $this->profileImageUrl;
+    }
+
+    /**
+     * @param string $professionalInstitution
+     */
+    public function setProfessionalInstitution($professionalInstitution) {
+        $this->professionalInstitution = $professionalInstitution;
+    }
+
+    /**
+     * @return string
+     */
+    public function getProfessionalInstitution() {
+        return $this->professionalInstitution;
     }
 }
