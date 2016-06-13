@@ -42,7 +42,21 @@ class User {
      * @var string
      * @JMS\Type("string")
      */
-    private $imageURL;
+    private $profileImageUrl;
+
+    /**
+     * @param string $userId
+     */
+    public function setUserId($userId) {
+        $this->userId = $userId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserId() {
+        return $this->userId;
+    }
 
     /**
      * @param string $firstName
@@ -75,7 +89,7 @@ class User {
     /**
      * @param string $middleName
      */
-    public function setMiddlename($middleName) {
+    public function setMiddleName($middleName) {
         $this->middleName = $middleName;
     }
 
@@ -87,30 +101,16 @@ class User {
     }
 
     /**
-     * @param string $userId
-     */
-    public function setUserId($userId) {
-        $this->userId = $userId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUserId() {
-        return $this->userId;
-    }
-
-    /**
-     * @return string
-     */
-    public function getImageURL() {
-        return $this->imageURL;
-    }
-
-    /**
      * @param string $url
      */
-    public function setImageURL($url) {
-        $this->imageURL = $url;
+    public function setProfileImageUrl($url) {
+        $this->profileImageUrl = $url;
+    }
+
+    /**
+     * @return string
+     */
+    public function getProfileImageUrl() {
+        return $this->profileImageUrl;
     }
 }
