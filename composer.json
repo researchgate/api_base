@@ -1,12 +1,13 @@
 {
     "name" : "rg/api-base",
+    "license": "MIT",
     "type" : "library",
     "description" : "",
     "keywords" : [],
     "authors" : [],
     "require" : {
         "php" : ">=5.4.0",
-        "jms/serializer-bundle" : "1.*"
+        "jms/serializer-bundle" : "^2.3.1"
     },
     "autoload" : {
         "psr-0" : {
